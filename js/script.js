@@ -55,7 +55,7 @@ class App {
 
     if ((this.#activePlayer === 0 && isP0 && isP1) || (isP0 && isP1)) {
       targetBox.classList.toggle(`p-${this.#activePlayer}`);
-      targetBox.innerHTML = `<ion-icon class="icons" name="${this.#activePlayer ? 'close-outline' : 'checkmark-outline'}"></ion-icon>`;
+      targetBox.innerHTML = `<ion-icon class="icons" name="${this.#activePlayer ? 'sunny-outline' : 'moon-outline'}"></ion-icon>`;
       this._callAllFunc();
       this.#activePlayer ^= 1;
     }
